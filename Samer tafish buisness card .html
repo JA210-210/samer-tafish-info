@@ -9,114 +9,87 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #f3f4f6, #d9e3f0, #f3f4f6, #e3f0d9, #f4f6f3, #fffae6, #f1e0f3);
-            animation: fadeColors 45s infinite;
+            background: linear-gradient(120deg, #f9f9f9, #e3e8ed, #ffffff);
+            animation: fadeColors 30s infinite;
             color: #333;
+            text-align: center;
         }
 
         @keyframes fadeColors {
-            0% { background: #f3f4f6; }
-            14% { background: #d9e3f0; }
-            28% { background: #f4f6f3; }
-            42% { background: #fffae6; }
-            57% { background: #f1e0f3; }
-            71% { background: #e3f0d9; }
-            85% { background: #d9e3f0; }
-            100% { background: #f3f4f6; }
+            0% { background-color: #f9f9f9; }
+            50% { background-color: #e3e8ed; }
+            100% { background-color: #ffffff; }
         }
 
         .container {
-            text-align: center;
             padding: 50px 20px;
         }
 
         .title {
-            font-size: 2.8em;
+            font-size: 2em;
             font-weight: bold;
             margin-bottom: 20px;
             color: #1a73e8;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             transition: transform 0.3s ease-in-out;
         }
 
         .title:hover {
-            transform: scale(1.1); /* Zoom effect when mouse pointer is near the title */
+            transform: scale(1.1); /* Subtle zoom effect */
         }
 
         .profile-picture {
-            width: 250px;
-            height: 250px;
-            background: url('images/Samer_tafish_pic.jpg') no-repeat center center/cover; /* Correct path here */
+            width: 300px;
+            height: 300px;
             margin: 0 auto 20px;
+            background: url('C:/Users/Jawad Tafish/OneDrive/Pictures/Samer tafish pic.jpg') no-repeat center center/cover;
             border: 5px solid #1a73e8;
-            border-radius: 0; /* Square shape */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .profile-picture:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(to right, #1a73e8, #ff5733);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .links {
-            font-size: 1.5em;
-            line-height: 2.5;
-            color: #1a73e8;
+            margin-top: 30px;
         }
 
         .links a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
             display: block;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 1.5em; /* Uniform text size for links */
+            margin: 15px auto;
+            padding: 10px 0;
+            text-decoration: none;
+            font-size: 1.5em; /* Uniformly large size */
+            font-weight: bold;
+            color: #1a73e8;
+            transition: color 0.3s, text-shadow 0.3s;
         }
 
         .links a:hover {
             color: #ff5733;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Shading effect on text only */
+            text-shadow: 0 0 5px rgba(255, 87, 51, 0.8);
+        }
+
+        .links a::after {
+            content: "";
+            display: block;
+            width: 60%;
+            height: 2px;
+            background: #1a73e8;
+            margin: 10px auto;
         }
 
         .footer {
             margin-top: 50px;
             font-size: 0.9em;
             color: #555;
-            text-align: center;
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
         }
 
         .footer span {
             font-weight: bold;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .contact-link {
-            font-size: 1.5em;
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .contact-link:hover {
-            color: #ff5733;
         }
 
         @media (max-width: 768px) {
             .title {
-                font-size: 2.5em;
+                font-size: 1.8em;
             }
 
             .profile-picture {
@@ -124,15 +97,10 @@
                 height: 200px;
             }
 
-            .links {
+            .links a {
                 font-size: 1.2em;
             }
-
-            .links a {
-                font-size: 1.3em; /* Ensure uniform text size on mobile */
-            }
         }
-
     </style>
 </head>
 <body>
@@ -140,11 +108,11 @@
         <div class="profile-picture"></div>
         <div class="title">All You Need About Samer Tafish</div>
         <div class="links">
-            <p><a href="https://sites.google.com/view/samer-tafinfo/home" target="_blank">My Website</a></p>
-            <p><a href="https://drive.google.com/file/d/11gl5x0FvJOHkZbQdZOQHt-CGXBMiuMy6/view" target="_blank">My CV</a></p>
-            <p><a href="https://www.linkedin.com/in/samer-tafech-69102b17a/" target="_blank">LinkedIn Profile</a></p>
-            <p><a href="tel:0506199589" class="contact-link">Contact Me (Phone)</a></p>
-            <p><a href="mailto:alsamerq@gmail.com" class="contact-link">Contact Me (Email)</a></p>
+            <a href="https://sites.google.com/view/samer-tafinfo/home" target="_blank">Visit My Website</a>
+            <a href="https://drive.google.com/file/d/11gl5x0FvJOHkZbQdZOQHt-CGXBMiuMy6/view" target="_blank">View My CV</a>
+            <a href="https://www.linkedin.com/in/samer-tafech-69102b17a/" target="_blank">Visit My LinkedIn Profile</a>
+            <a href="tel:0506199589">Contact Me (Phone)</a>
+            <a href="mailto:alsamerq@gmail.com">Contact Me (Email)</a>
         </div>
         <div class="footer">
             &copy; 2025 All Rights Reserved <span>Samer Tafish</span>
@@ -152,4 +120,5 @@
     </div>
 </body>
 </html>
+
 
