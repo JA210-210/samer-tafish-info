@@ -1,0 +1,10 @@
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 20px;
+    background: url("Samer%20tafish%20pic.jpg") no-repeat center center/cover; /* If the image is in the root */
+    /* OR */
+    background: url("assets/Samer%20tafish%20pic.jpg") no-repeat center center/cover; /* If the image is in an assets folder */
+    border: 5px solid #1a73e8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
